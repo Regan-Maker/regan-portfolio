@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — REGAN</title>
+</meta>
+    <meta name="description" content="About ATWEBEMBEIRE REGAN — background, skills, and approach.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container nav">
+            <a href="index.html#home" class="brand">ATWEBEMBEIRE <span>REGAN</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                 <nav class="nav-links" aria-label="Main navigation">
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="experience.html">Experience</a>
+                <a href="contacts.html">Contact</a>
+            </nav>
+            <a href="contacts.html#contact" class="button">Hire Me</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="eyebrow">About</div>
+                    <h1>About Me — ATWEBEMBEIRE <span class="highlight">REGAN</span></h1>
+                    <p class="lead">I enjoy turning ideas into elegant digital solutions that are both user-friendly and impactful. I combine technical skill, strategic thinking, and a passion for excellence.</p>
+                    <div class="cta-row">
+                        <a href="potforlio.php#projects" class="button">View My Work</a>
+                        <a href="potforlio.php#contact" class="button secondary">Contact</a>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="avatar-wrap">
+                        <div class="avatar">
+                            <div class="portrait">
+                                <img src="images/regan.jpeg" alt="ATWEBEMBEIRE REGAN" class="portrait-img">
+                            </div>
+                            <div class="badge">Creative • Reliable • Goal-Oriented</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="section-head">
+                    <h2>About Me</h2>
+                    <p>I enjoy turning ideas into elegant digital solutions that are both user-friendly and impactful.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="panel">
+                        <p>
+                            My name is <strong>ATWEBEMBEIRE REGAN</strong>, and I am passionate about technology, creativity, and problem-solving. I am dedicated to building strong digital experiences that make a real difference for clients, teams, and users.
+                        </p>
+                        <ul class="list">
+                            <li><span class="bullet"></span><span>I bring a balance of technical ability, creativity, and professionalism to every task I undertake.</span></li>
+                            <li><span class="bullet"></span><span>I enjoy learning new tools, improving workflows, and creating solutions that are practical and sustainable.</span></li>
+                            <li><span class="bullet"></span><span>I value discipline, communication, and teamwork because strong collaboration leads to stronger outcomes.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <p>
+                            I strive to present myself with confidence, clarity, and a strong work ethic. I believe that every project reflects the effort, consistency, and standards behind it, and I aim to create work that speaks of professionalism and commitment.
+                        </p>
+                        <ul class="list">
+                            <li><span class="bullet"></span><span>Focused on quality, detail, and meaningful results.</span></li>
+                            <li><span class="bullet"></span><span>Interested in growth opportunities that challenge and expand my ability.</span></li>
+                            <li><span class="bullet"></span><span>Ready to contribute to teams that value innovation and excellence.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            © <span id="year"></span> ATWEBEMBEIRE REGAN. Crafted with purpose and professionalism.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+        (function(){
+            var t = document.querySelector('.nav-toggle');
+            var n = document.querySelector('.nav-links');
+            if(!t||!n) return;
+            t.addEventListener('click', function(){ n.classList.toggle('open'); });
+        })();
+    </script>
+</body>
+</html>

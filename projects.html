@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — REGAN</title>
+    <meta name="description" content="Featured projects and case studies by ATWEBEMBEIRE REGAN.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container nav">
+            <a href="index.html#home" class="brand">ATWEBEMBEIRE <span>REGAN</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                <nav class="nav-links" aria-label="Main navigation">
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="experience.html">Experience</a>
+                <a href="contacts.html">Contact</a>
+            </nav>
+            <a href="contacts.html" class="button">Hire Me</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="eyebrow">Work</div>
+                    <h1>Featured Projects</h1>
+                    <p class="lead">A selection of projects that demonstrate design, development, and production capabilities.</p>
+                    <div class="cta-row">
+                        <a href="contacts.php" class="button">Discuss a Project</a>
+                        <a href="skills.php" class="button secondary">Services</a>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="avatar-wrap">
+                        <div class="avatar">
+                            <div class="portrait">
+                                <img src="images/regan.jpeg" alt="ATWEBEMBEIRE REGAN" class="portrait-img">
+                            </div>
+                            <div class="badge">Projects • Design • Delivery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Projects</h2>
+                    <p>Examples of the kind of thoughtful work I deliver with clarity and purpose.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="panel project">
+                        <div class="project-visual">01</div>
+                        <div class="project-body">
+                            <h3>Business Portfolio</h3>
+                            <p>A clean and professional digital presence designed to showcase services, achievements, and trust-building value.</p>
+                            <a href="contacts.php" class="project-link">Inquire about this project</a>
+                        </div>
+                    </article>
+
+                    <article class="panel project">
+                        <div class="project-visual">02</div>
+                        <div class="project-body">
+                            <h3>Personal Brand Site</h3>
+                            <p>A personal online platform that presents identity, strengths, and expertise in a polished, engaging way.</p>
+                            <a href="contacts.php" class="project-link">Discuss this approach</a>
+                        </div>
+                    </article>
+
+                    <article class="panel project">
+                        <div class="project-visual">03</div>
+                        <div class="project-body">
+                            <h3>Professional Landing Page</h3>
+                            <p>A conversion-focused design built to communicate value quickly and leave a strong first impression.</p>
+                            <a href="contacts.php" class="project-link">Request a quote</a>
+                        </div>
+                    </article>
+
+                    <article class="panel project">
+                        <div class="project-visual">04</div>
+                        <div class="project-body">
+                            <h3>Pearl Travels Project</h3>
+                            <p>A conversion design built to communicate value in Ugandan tourism industry By Regan- Pearl Travels.</p>
+                            <a href="https://regan-maker.github.io/pearl-travels/" class="project-link">Click Here to Visist</a>
+                        </div>
+                    </article>
+
+                    <article class="panel project">
+                        <div class="project-visual">05</div>
+                        <div class="project-body">
+                            <h3>School Post System Project</h3>
+                            <p>A focused design built to communicate to the community and leave a strong impressions By enabling seamless information sharing about school events and updates.</p>
+                            <a href="contacts.php" class="project-link">Click Here to Pay A Visit</a>
+                        </div>
+                    </article>
+
+                    <article class="panel project">
+                        <div class="project-visual">06</div>
+                        <div class="project-body">
+                            <h3>Paperly Management System</h3>
+                            <p>A Well-designed system built to help students at Bishop Stuart University to gain access to past papers and also share their past papers.</p>
+                            <a href="contacts.php" class="project-link">Click Here to Pay A Visit</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            © <span id="year"></span> ATWEBEMBEIRE REGAN. Crafted with purpose and professionalism.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+        (function(){
+            var t = document.querySelector('.nav-toggle');
+            var n = document.querySelector('.nav-links');
+            if(!t||!n) return;
+            t.addEventListener('click', function(){ n.classList.toggle('open'); });
+        })();
+    </script>
+</body>
+</html>
