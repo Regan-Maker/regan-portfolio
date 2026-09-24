@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATWEBEMBEIRE REGAN | CV</title>
+    <meta name="description" content="Curriculum Vitae for ATWEBEMBEIRE REGAN">
+    <style>
+        :root {
+            --bg: #07131f;
+            --bg-soft: #0d1d2b;
+            --panel: #0f1f2d;
+            --line: rgba(255,255,255,0.12);
+            --text: #edf7ff;
+            --muted: #bfd3df;
+            --primary: #43d0c7;
+            --primary-2: #7ae7d3;
+            --accent: #f4b740;
+            --shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #061019 0%, #0d1f2e 100%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 980px;
+            margin: 50px auto;
+            background: rgba(15, 31, 45, 0.9);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, rgba(67,208,199,0.18), rgba(12,29,43,0.8));
+            border-bottom: 1px solid var(--line);
+            padding: 36px 42px 28px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.3rem;
+            letter-spacing: -0.04em;
+        }
+
+        .title {
+            color: var(--primary-2);
+            font-weight: 700;
+            margin-top: 8px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+        }
+
+        .contact {
+            text-align: right;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1.1fr 2fr;
+            gap: 0;
+        }
+
+        .sidebar {
+            background: rgba(255,255,255,0.02);
+            border-right: 1px solid var(--line);
+            padding: 28px 30px;
+        }
+
+        .main {
+            padding: 28px 30px;
+        }
+
+        .section {
+            margin-bottom: 26px;
+        }
+
+        .section h2 {
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--primary-2);
+            margin: 0 0 14px;
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 8px;
+        }
+
+        .info-list,
+        .skills-list,
+        .list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-list li,
+        .skills-list li,
+        .list li {
+            margin-bottom: 10px;
+            color: var(--muted);
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(67, 208, 199, 0.12);
+            border: 1px solid rgba(67, 208, 199, 0.25);
+            color: var(--primary-2);
+            border-radius: 999px;
+            padding: 0.45rem 0.8rem;
+            margin: 0.2rem 0.45rem 0.2rem 0;
+            font-size: 0.8rem;
+        }
+
+        .role {
+            margin: 0 0 8px;
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+
+        .meta {
+            color: var(--primary-2);
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin: 0 0 10px;
+            color: var(--muted);
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            padding: 0 42px 32px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.9rem 1.4rem;
+            border-radius: 999px;
+            border: 1px solid rgba(67, 208, 199, 0.6);
+            background: linear-gradient(135deg, var(--primary), var(--primary-2));
+            color: #062b2a;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button.secondary {
+            background: transparent;
+            color: var(--text);
+            border: 1px solid var(--line);
+        }
+
+        @media (max-width: 760px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                border-right: 0;
+                border-bottom: 1px solid var(--line);
+            }
+
+            .page {
+                margin: 20px;
+            }
+
+            .header,
+            .sidebar,
+            .main,
+            .actions {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header-top">
+                <div>
+                    <h1>ATWEBEMBEIRE REGAN</h1>
+                    <div class="title">Web Developer | Graphic Designer | Branding Professional</div>
+                </div>
+                <div class="contact">
+                    <div>reganricks73@gmail.com</div>
+                    <div>Mbarara, Uganda</div>
+                    <div>+256 774 710 709</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <aside class="sidebar">
+                <div class="section">
+                    <h2>Profile</h2>
+                    <p>Motivated and creative professional focused on delivering modern, reliable, and meaningful digital solutions. I combine technical skill, strategic thinking, and a passion for excellence to help businesses and users grow.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Skills</h2>
+                    <ul class="skills-list">
+                        <li>Web Development</li>
+                        <li>UI/UX</li>
+                        <li>Graphic Design</li>
+                        <li>Branding</li>
+                        <li>Project Planning</li>
+                        <li>Client Communication</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Contact</h2>
+                    <ul class="info-list">
+                        <li>Email: reganricks73@gmail.com</li>
+                        <li>Location: Mbarara, Uganda</li>
+                        <li>Focus: Web / Design / Branding</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="main">
+                <div class="section">
+                    <h2>Experience</h2>
+
+                    <div class="role">Web & Brand Specialist</div>
+                    <div class="meta">Deco Printing & Graphics Company Ltd | 2024 — Present</div>
+                    <p>I focus on creating professional, clean, and effective online experiences that reflect strong branding and clear communication.</p>
+
+                    <div class="role">Student / Creative Learner</div>
+                    <div class="meta">Bishop Stuart University | 2022 — 2024</div>
+                    <p>I expanded my understanding of design, layout, user experience, and development practices while building practical digital skills.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Core Competencies</h2>
+                    <div>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive Design</span>
+                        <span class="tag">Brand Identity</span>
+                        <span class="tag">UX Thinking</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Education & Training</h2>
+                    <p>Continuous learning in digital design, web development, and professional project execution with a strong emphasis on quality and impact.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Availability</h2>
+                    <p>Open to opportunities in website development, branding, graphic design, and digital project work.</p>
+                </div>
+            </main>
+        </div>
+
+        <div class="actions">
+            <a class="button" href="assets/ATWEBEMBEIRE_REGAN_CV.pdf" target="_blank" rel="noopener noreferrer">Open PDF CV</a>
+            <a class="button secondary" href="index.html">Back to Portfolio</a>
+        </div>
+
+        <div class="container footer-wrap" style="padding: 0 20px 24px;">
+            <div class="footer-socials" aria-label="Social media links">
+                <a href="https://www.linkedin.com/in/atwebembeire-regan-542b86359?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-btn linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span aria-hidden="true">in</span></a>
+                <a href="https://www.facebook.com" class="social-btn facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+                <a href="https://wa.me/256774710709" class="social-btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><span aria-hidden="true">W</span></a>
+                <a href="mailto:reganricks73@gmail.com" class="social-btn gmail" aria-label="Gmail"><span aria-hidden="true">✉</span></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

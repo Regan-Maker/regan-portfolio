@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio website for ATWEBEMBEIRE REGAN, showcasing skills, experience, and professional achievements.">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+ <body>
     <header class="topbar">
         <div class="container nav">
             <a href="#home" class="brand">ATWEBEMBEIRE <span>REGAN</span></a>
@@ -26,17 +26,17 @@
         <section class="hero">
             <div class="container hero-grid">
                 <div>
-                    <div class="eyebrow">My Professional Portfolio</div>
-                    <h1>Building digital experiences that <span class="highlight">inspire trust</span> and drive results.</h1>
-                    <p class="lead">
+                    <div class="eyebrow reveal">Professional Portfolio</div>
+                    <h1 class="reveal">Building digital experiences that <span class="highlight">inspire trust</span> and drive results.</h1>
+                    <p class="lead reveal">
                         I am <strong>ATWEBEMBEIRE REGAN</strong>, a motivated and creative professional focused on delivering modern, reliable, and meaningful digital solutions. I combine technical skill, strategic thinking, and a passion for excellence to help businesses and people grow.
                     </p>
-                    <div class="cta-row">
+                    <div class="cta-row reveal">
                         <a href="projects.html" class="button">View My Work</a>
                         <a href="about.html" class="button secondary">About Me</a>
                     </div>
 
-                    <div class="stats" aria-label="Quick stats">
+                    <div class="stats reveal" aria-label="Quick stats">
                         <div class="stat">
                             <strong>3+</strong>
                             Years of Growth
@@ -52,7 +52,7 @@
                     </div>
                 </div>
 
-                <div class="profile-card">
+                <div class="profile-card reveal">
                     <div class="avatar-wrap">
                         <div class="avatar">
                             <div class="portrait">
@@ -67,13 +67,13 @@
 
         <section id="about">
             <div class="container">
-                <div class="section-head">
+                <div class="section-head reveal">
                     <h2>About Me</h2>
                     <p>I enjoy turning ideas into elegant digital solutions that are both user-friendly and impactful.</p>
                 </div>
 
                 <div class="about-grid">
-                    <div class="panel">
+                    <div class="panel reveal">
                         <p>
                             My name is <strong>ATWEBEMBEIRE REGAN</strong>, and I am passionate about technology, creativity, and problem-solving. I am dedicated to building strong digital experiences that make a real difference for clients, teams, and users.
                         </p>
@@ -84,7 +84,7 @@
                         </ul>
                     </div>
 
-                    <div class="panel">
+                    <div class="panel reveal">
                         <p>
                             I strive to present myself with confidence, clarity, and a strong work ethic. I believe that every project reflects the effort, consistency, and standards behind it, and I aim to create work that speaks of professionalism and commitment.
                         </p>
@@ -228,7 +228,10 @@
                         <p>
                             I am ready to bring professionalism, creativity, and dedication to projects that require excellence and a thoughtful digital presence.
                         </p>
-                        <a href="mailto:reganricks73@gmail.com" class="button">Email Me</a>
+                        <div class="cta-row">
+                            <a href="mailto:reganricks73@gmail.com" class="button">Email Me</a>
+                            <a href="cv.html" class="button secondary" target="_blank" rel="noopener noreferrer">Download CV</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -236,13 +239,27 @@
     </main>
 
     <footer>
-        <div class="container">
-            © <span id="year"></span> ATWEBEMBEIRE REGAN. Crafted with purpose and professionalism.
+        <div class="container footer-wrap">
+            <div class="footer-socials" aria-label="Social media links">
+                <a href="https://www.linkedin.com/in/atwebembeire-regan-542b86359?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-btn linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span aria-hidden="true">in</span></a>
+                <a href="https://www.facebook.com" class="social-btn facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+                <a href="https://wa.me/256774710709" class="social-btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><span aria-hidden="true">W</span></a>
+                <a href="mailto:reganricks73@gmail.com" class="social-btn gmail" aria-label="Gmail"><span aria-hidden="true">✉</span></a>
+            </div>
+            <div class="footer-copy">
+                © <span id="year"></span> ATWEBEMBEIRE REGAN. Crafted with purpose and professionalism.
+            </div>
         </div>
     </footer>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        window.addEventListener('load', function () {
+            document.querySelectorAll('.reveal').forEach(function (element) {
+                element.classList.add('visible');
+            });
+        });
     </script>
     <script>
         (function(){
