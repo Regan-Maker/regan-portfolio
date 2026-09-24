@@ -86,10 +86,10 @@
     <footer>
         <div class="container footer-wrap">
             <div class="footer-socials" aria-label="Social media links">
-                <a href="https://www.linkedin.com/in/atwebembeire-regan-542b86359?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-btn linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span aria-hidden="true">in</span></a>
-                <a href="https://www.facebook.com" class="social-btn facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span aria-hidden="true">f</span></a>
-                <a href="https://wa.me/256774710709" class="social-btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><span aria-hidden="true">W</span></a>
-                <a href="mailto:reganricks73@gmail.com" class="social-btn gmail" aria-label="Gmail"><span aria-hidden="true">✉</span></a>
+                <button type="button" class="social-btn linkedin" data-href="https://www.linkedin.com/in/atwebembeire-regan-542b86359?utm_source=share_via&utm_content=profile&utm_medium=member_android" data-target="_blank" data-rel="noopener noreferrer" aria-label="LinkedIn"><span aria-hidden="true">in</span></button>
+                <button type="button" class="social-btn facebook" data-href="https://www.facebook.com" data-target="_blank" data-rel="noopener noreferrer" aria-label="Facebook"><span aria-hidden="true">f</span></button>
+                <button type="button" class="social-btn whatsapp" data-href="https://wa.me/256774710709" data-target="_blank" data-rel="noopener noreferrer" aria-label="WhatsApp"><span aria-hidden="true">W</span></button>
+                <button type="button" class="social-btn gmail" data-href="mailto:reganricks73@gmail.com" aria-label="Gmail"><span aria-hidden="true">✉</span></button>
             </div>
             <div class="footer-copy">
                 © <span id="year"></span> ATWEBEMBEIRE REGAN. Crafted with purpose and professionalism.
@@ -106,6 +106,26 @@
             var n = document.querySelector('.nav-links');
             if(!t||!n) return;
             t.addEventListener('click', function(){ n.classList.toggle('open'); });
+        })();
+    </script>
+    <script>
+        (function () {
+            var socials = document.querySelectorAll('.footer-socials button[data-href]');
+            socials.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var href = btn.getAttribute('data-href');
+                    var target = btn.getAttribute('data-target');
+                    if (!href) return;
+                    if (target === '_blank') {
+                        var win = window.open(href, '_blank');
+                        if (win && btn.getAttribute('data-rel')) {
+                            try { win.opener = null; } catch (e) {}
+                        }
+                    } else {
+                        window.location.href = href;
+                    }
+                });
+            });
         })();
     </script>
 </body>
